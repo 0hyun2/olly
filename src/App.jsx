@@ -392,19 +392,19 @@ If not Korean cosmetic: {"error":"Not a Korean cosmetic product"}`}
           </div>
         </div>
         <div style={{background:CARD,borderRadius:20,padding:18,marginBottom:12,border:"1px solid "+BG,boxShadow:"0 2px 8px rgba(85,139,47,0.06)"}}>
-          <div style={{fontSize:12,fontWeight:700,color:T2,textTransform:"uppercase",letterSpacing:.5,marginBottom:8,textAlign:"left"}}>⚠️ Disclaimer</div>
-          <div style={{fontSize:13,color:T2,lineHeight:1.7}}>AI-generated info — not medical advice.</div>
+          <div style={{fontSize:12,fontWeight:700,color:T2,textTransform:"uppercase",letterSpacing:.5,marginBottom:8}}>⚠️ Disclaimer</div>
+          <div style={{fontSize:13,color:T2,lineHeight:1.7,paddingLeft:0}}>AI-generated info — not medical advice.</div>
         </div>
         <div style={{background:CARD,borderRadius:20,padding:18,marginBottom:12,border:"1px solid "+BG,boxShadow:"0 2px 8px rgba(85,139,47,0.06)"}}>
-          <div style={{fontSize:12,fontWeight:700,color:T2,textTransform:"uppercase",letterSpacing:.5,marginBottom:8,textAlign:"left"}}>🔒 Privacy</div>
-          <div style={{fontSize:13,color:T2,lineHeight:1.7}}>Photos are processed in your browser only.</div>
+          <div style={{fontSize:12,fontWeight:700,color:T2,textTransform:"uppercase",letterSpacing:.5,marginBottom:8}}>🔒 Privacy</div>
+          <div style={{fontSize:13,color:T2,lineHeight:1.7,paddingLeft:0}}>Photos are processed in your browser only.</div>
         </div>
         <div style={{background:CARD,borderRadius:20,padding:18,border:"1px solid "+BG,boxShadow:"0 2px 8px rgba(85,139,47,0.06)"}}>
           <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:10}}>
             <OllyMascot size={44} src={MASCOT_HOME}/>
             <div><div style={{fontSize:16,fontWeight:800,color:DG}}>Olly</div><div style={{fontSize:12,color:T2}}>{t.version}</div></div>
           </div>
-          <div style={{fontSize:13,color:T2,lineHeight:1.7}}>{t.aboutText}</div>
+          <div style={{fontSize:13,color:T2,lineHeight:1.7,whiteSpace:"nowrap",overflow:"hidden",textOverflow:"ellipsis"}}>{t.aboutText}</div>
         </div>
       </div>
     </div>
