@@ -385,19 +385,19 @@ If not Korean cosmetic: {"error":"Not a Korean cosmetic product"}`}
       <div style={{padding:"0 20px"}}>
         <div style={{background:CARD,borderRadius:20,marginBottom:12,border:"1px solid "+BG,padding:18,boxShadow:"0 2px 8px rgba(85,139,47,0.06)"}}>
           <div style={{fontSize:12,fontWeight:700,color:T2,textTransform:"uppercase",letterSpacing:.5,marginBottom:10}}>{t.language}</div>
-          <div style={{display:"flex",flexWrap:"wrap",gap:8}}>
-            {LANGUAGES.map(l=>(<button key={l.code} onClick={()=>setLang(l)} style={{padding:"8px 13px",background:l.code===lang.code?"linear-gradient(135deg,"+G+","+DG+")":BG,border:"1px solid "+(l.code===lang.code?G:LG),borderRadius:20,cursor:"pointer",fontSize:12,fontWeight:l.code===lang.code?700:400,color:l.code===lang.code?"white":T1,display:"flex",alignItems:"center",gap:5}}>
+          <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:8}}>
+            {LANGUAGES.map(l=>(<button key={l.code} onClick={()=>setLang(l)} style={{padding:"8px 6px",background:l.code===lang.code?"linear-gradient(135deg,"+G+","+DG+")":BG,border:"1px solid "+(l.code===lang.code?G:LG),borderRadius:20,cursor:"pointer",fontSize:12,fontWeight:l.code===lang.code?700:400,color:l.code===lang.code?"white":T1,display:"flex",alignItems:"center",justifyContent:"center",gap:4}}>
               <span>{l.flag}</span><span>{l.label}</span>
             </button>))}
           </div>
         </div>
         <div style={{background:CARD,borderRadius:20,padding:18,marginBottom:12,border:"1px solid "+BG,boxShadow:"0 2px 8px rgba(85,139,47,0.06)"}}>
-          <div style={{fontSize:12,fontWeight:700,color:T2,textTransform:"uppercase",letterSpacing:.5,marginBottom:8}}>⚠️ Disclaimer</div>
-          <div style={{fontSize:13,color:T2,lineHeight:1.7}}>{t.disclaimer}</div>
+          <div style={{fontSize:12,fontWeight:700,color:T2,textTransform:"uppercase",letterSpacing:.5,marginBottom:8,textAlign:"left"}}>⚠️ Disclaimer</div>
+          <div style={{fontSize:13,color:T2,lineHeight:1.7}}>AI-generated info — not medical advice.</div>
         </div>
         <div style={{background:CARD,borderRadius:20,padding:18,marginBottom:12,border:"1px solid "+BG,boxShadow:"0 2px 8px rgba(85,139,47,0.06)"}}>
-          <div style={{fontSize:12,fontWeight:700,color:T2,textTransform:"uppercase",letterSpacing:.5,marginBottom:8}}>🔒 Privacy</div>
-          <div style={{fontSize:13,color:T2,lineHeight:1.7}}>{t.privacyNote}</div>
+          <div style={{fontSize:12,fontWeight:700,color:T2,textTransform:"uppercase",letterSpacing:.5,marginBottom:8,textAlign:"left"}}>🔒 Privacy</div>
+          <div style={{fontSize:13,color:T2,lineHeight:1.7}}>Photos are processed in your browser only.</div>
         </div>
         <div style={{background:CARD,borderRadius:20,padding:18,border:"1px solid "+BG,boxShadow:"0 2px 8px rgba(85,139,47,0.06)"}}>
           <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:10}}>
